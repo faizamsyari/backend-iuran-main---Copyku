@@ -74,6 +74,10 @@ app.post("/logout", async(req,res)=>{
     }
 })
 
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
+
 app.get("/get", async(req,res)=>{
     const snapshot = await User.firestore().collection("Tagihan").get();
     const list = snapshot.docs.map((doc)=>({idku:doc.id,...doc.data()}))

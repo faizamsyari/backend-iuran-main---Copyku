@@ -58,6 +58,7 @@ app.post("/login", async(req,res)=>{
     })
     .catch(function(error){
        res.send("ADA KESALAHAN COBA LAGI")
+       console.log("TESSSS")
        console.log(error)
     });
     // await User.firestore().collection("Data User").doc(`${data.nama}`).set(data)

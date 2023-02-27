@@ -57,7 +57,7 @@ app.post("/login", async(req,res)=>{
         res.send({uid:login.user.uid,data:"BERHASIL LOGIN"})
     })
     .catch(function(error){
-       res.send("ADA KESALAHAN COBA")
+       res.send("ADA KESALAHAN COBA LAGI")
        console.log(error)
     });
     // await User.firestore().collection("Data User").doc(`${data.nama}`).set(data)

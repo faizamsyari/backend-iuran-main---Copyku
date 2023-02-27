@@ -11,8 +11,8 @@ var idmen = ""
 // Create Core API instance
 let coreApi = new midtransClient.CoreApi({
         isProduction : true,
-        serverKey : 'Mid-server-6TquJSqBkFtBP5zE6TnOmBF2',
-        clientKey: "Mid-client-NzLXWIPt0N12tHVV"
+        serverKey : 'SB-Mid-server-M382WCzXVOmwNjGjTuy0Uzkn',
+        clientKey: "SB-Mid-client-fs2oUDIj3MOlWmO3"
         // clientKey : 'SB-Mid-server-M382WCzXVOmwNjGjTuy0Uzkn'
     });
 
@@ -59,6 +59,7 @@ app.post("/login", async(req,res)=>{
     .catch(function(error){
        res.send("ADA KESALAHAN COBA LAGI")
        console.log("TESSSS")
+       console.log(error)
       
     });
     // await User.firestore().collection("Data User").doc(`${data.nama}`).set(data)

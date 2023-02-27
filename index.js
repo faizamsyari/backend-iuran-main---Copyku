@@ -10,7 +10,7 @@ app.use(cors());
 var idmen = ""
 // Create Core API instance
 let coreApi = new midtransClient.CoreApi({
-        isProduction : true,
+        isProduction : false,
         serverKey : 'SB-Mid-server-M382WCzXVOmwNjGjTuy0Uzkn',
         clientKey: "SB-Mid-client-fs2oUDIj3MOlWmO3"
         // clientKey : 'SB-Mid-server-M382WCzXVOmwNjGjTuy0Uzkn'

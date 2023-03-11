@@ -232,6 +232,12 @@ app.post("/ambilbayaran", async(req,res)=>{
     
 })
 
+
+app.post("/debugapi", async(req,res)=>{
+    const data=req.body
+    console.log(data)
+})
+
 // app.listen(4000, ()=>console.log("App Running port 4000"))
 
 app.listen(process.env.PORT || 4000,()=>console.log("App Running Port 4000"))
